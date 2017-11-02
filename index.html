@@ -2,9 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <title>Game</title>
   </head>
   <body>
-    <script type="text/javascript" src="script.js"></script>
+
+    <div class = "displayInfo">
+      <div class = "name"></div>
+      <div class = "healsR"></div>
+      <div class = "health"></div>
+      <div class = "wins"></div>
+      <div class = "eName"></div>
+      <div class = "eHealth"></div>
+    </div>
+
+    <div class="game">
+      <button type="button" onclick="startGame()">Play</button>
+    </div>
+
+    <div class = "buttons">
+      <button  value="attack" onclick="startCombat(this.value);">Attack</button>
+      <button  value="Heal" onclick="startCombat(this.value);">Heal</button>
+      <button  value="Quit" onclick="startCombat(this.value);">Quit</button>
+    </div>
+
+    <div class = "status">
+
+    </div>
+
+
+    <!--<script type="text/javascript" src="script2.js"></script>/-->
+    <script type="text/javascript" src="script4.js"></script>
   </body>
 </html>

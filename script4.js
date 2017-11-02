@@ -20,6 +20,7 @@ function startGame(){
       return Math.floor(Math.random() * 10) + 1;
     }
   };
+  displayInfo();
 }
 
 
@@ -27,6 +28,8 @@ function startCombat(choice) {
   var gameText = " ";
   if (character.wins >= 5) {
     gameText = "Hurray! You won";
+    displayInfo();
+    statusInfo(gameText);
     return;
   }
   if (choice === "attack"){
